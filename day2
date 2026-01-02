@@ -1,0 +1,58 @@
+#Write a program to print 20 prime numbers in an order
+#1,2,3,5,7,......,97
+
+list1=[1,2,3]
+
+'''num1=4
+is 4 divisible by 2 -yes , it is not  a prime number
+
+num1=5
+is 5 divisible by 2 - no , go to next 
+is 5 divisible by 3 - no , go to next
+is 5 divisible by 4 - no , go to next
+
+num1=6
+is 6 divisible by 2 - yes , it is not  a prime number
+
+num1=7
+is 7 divisible by 2 - no , go to next
+is 7 divisible by 3 - no , go to next
+is 7 divisible by 4 - no , go to next
+is 7 divisible by 5 - no , go to next
+is 7 divisible by 6 - no , go to next
+
+num1=8
+is 8 divisible by 2 - yes , it is not  a prime number '''
+
+num1=4
+isprime=True
+if num1%2==0:
+    isPrime=False
+if isPrime==True:
+    list1.append(num1)
+    print(list1)
+
+
+num1=5
+if num1%2==0:
+    isPrime=False
+if num1%3==0:
+    isPrime=True
+if num1%4==0:
+    isPrime=False
+if num1%5==0:
+    isPrime=True   
+if isPrime==True:
+    list1.append(num1)
+    print(list1)
+
+num1=9
+if num1%2==0:
+    isPrime=False
+if num1%3==0:
+    isPrime=True
+if num1%4==0:
+    isPrime=False
+if isPrime==True:
+    list1.append(num1)
+    print(list1)
